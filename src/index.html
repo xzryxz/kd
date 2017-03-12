@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Korean Democrats</title>
+    <style>
+      *  {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: #f5f5f5;
+        color: #111111;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      #page {
+        background-color: #ffffff;
+        border-bottom: 2px solid #dddddd;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      h1 {
+        border-bottom: 1px solid #111111;
+        clear: both;
+      }
+      p {
+        line-height: 1.6rem;
+        margin: 1rem 0 3rem;
+      }
+      .intro {
+        font-weight: bold;
+      }
+      #menu {
+        margin-bottom: 3rem;
+      }
+      #menu a {
+        display: block;
+        font-size: 2rem;
+        margin: 0 2rem 1rem 0;
+      }
+      #menu-open, #menu-close {
+        cursor: pointer;
+        float: right;
+        font-size: 3rem;
+      }
+      #footer {
+        color: #999999;
+        font-family: monospace;
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 2rem;
+      }
+      #footer a {
+        color: #999999;
+      }
+      @media only screen and (min-width: 900px) {
+        body {
+          padding: 2rem;
+        }
+        #menu-open, #menu-close {
+          display: none !important;
+        }
+        #menu {
+          display: block !important;
+        }
+        #menu a {
+          display: inline;
+        }
+      }
+    </style>
+    <script>
+      function toggle(action) {
+        var menu = document.getElementById('menu');
+        var menuClose = document.getElementById('menu-close');
+        var menuOpen = document.getElementById('menu-open');
+        if (action === 'OPEN') {
+          menu.style.display = 'block';
+          menuClose.style.display = 'block';
+          menuOpen.style.display = 'none';
+        }
+        if (action === 'CLOSE') {
+          menu.style.display = 'none';
+          menuClose.style.display = 'none';
+          menuOpen.style.display = 'block';
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="page">
+      <i onclick="toggle('CLOSE');" id="menu-close" class="material-icons" style="display: none;">&#xE5CD;</i>
+      <i onclick="toggle('OPEN');" id="menu-open" class="material-icons">&#xE5D2;</i>
+      <div id="menu" style="display: none;">
+        <a href="/#">Home</a>
+        <a href="/about#">About</a>
+        <a href="/contact#">Contact</a>
+      </div>
+      <h1> Korean Democrats </h1>
+      <p class="intro"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <h2> Second heading </h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      <h3> Third heading </h3>
+      <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+    <div id="footer">
+      copyright <i class="material-icons" style="vertical-align: middle;">&#xE90C;</i> 2017
+    </div>
+  </body>
+</html>
