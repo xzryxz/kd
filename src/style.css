@@ -30,8 +30,26 @@ a:hover {
 }
 
 
+#menu a {
+  color: #0000ff;
+  float: left;
+  clear: left;
+  font-size: 2rem;
+  padding: 0 2rem 1rem 0;
+}
+#menu a.active {
+  text-decoration: underline;
+}
+#menu-open, #menu-close {
+  cursor: pointer;
+  float: right;
+  font-size: 3rem;
+}
+
+
 h1 {
   border-bottom: 1px solid #111111;
+  padding-top: 3rem;
   clear: both;
 }
 
@@ -42,25 +60,6 @@ p {
 }
 p.intro {
   font-weight: bold;
-}
-
-
-#menu {
-  margin-bottom: 3rem;
-}
-#menu a {
-  color: #0000ff;
-  display: block;
-  font-size: 2rem;
-  margin: 0 2rem 1rem 0;
-}
-#menu a.active {
-  text-decoration: underline;
-}
-#menu-open, #menu-close {
-  cursor: pointer;
-  float: right;
-  font-size: 3rem;
 }
 
 
@@ -90,7 +89,7 @@ p.intro {
     display: block !important;
   }
   #menu a {
-    display: inline;
+    float: none;
   }
 
 }
