@@ -10,8 +10,7 @@
 
 
 ## Rules
-> 1. Mobile first
-
+1. Mobile first
 
 ## Resources
 [Google Icons lookup](https://github.com/google/material-design-icons/blob/master/iconfont/codepoints)
@@ -38,7 +37,7 @@
 - [x] `0.0.0` Test checkbox
 - [x] `0.0.1` Split HTML, CSS and JS to separate files
 - [x] `0.0.2` Versioning
-- [ ] `0.0.3` Environments
+- [x] `0.0.3` Environments
 
 
 - [ ] `0.1.0` TypeScript

@@ -1,11 +1,13 @@
 {
   "name": "koreandemocrats",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "start": "node_modules/.bin/browser-sync start --server src --files src"
   },
   "dependencies": {
     "browser-sync": "^2.18.8",
+    "chalk": "^1.1.3",
+    "inquirer": "^3.0.6",
     "rsync": "^0.6.1"
   }
 }
