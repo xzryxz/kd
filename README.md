@@ -6,6 +6,9 @@ Installation
 Start dev server
 `npm start`
 
+Deploy
+`node deploy`
+
 ## Rules
 
 - Mobile first
@@ -15,12 +18,12 @@ Start dev server
 
 Version 0
 - [x] Test checkbox
-- [ ] Split HTML, CSS and JS to separate files
+- [x] Split HTML, CSS and JS to separate files
 - [ ] I18N support
 - [ ] Korean alphabet
 - [ ] Add logo
 - [ ] Add favicon
-- [ ] Hot reloading
+- [x] Hot reloading
 
 Version 1
 - [ ] Add text

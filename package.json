@@ -5,6 +5,7 @@
     "start": "node_modules/.bin/browser-sync start --server src --files src"
   },
   "dependencies": {
-    "browser-sync": "^2.18.8"
+    "browser-sync": "^2.18.8",
+    "rsync": "^0.6.1"
   }
 }
