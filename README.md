@@ -1,39 +1,73 @@
-# Dev Guide
+# Developer Guide
 
-Installation
-`yarn`
+## CLI commands
 
-Start dev server
-`npm start`
+` yarn install `
 
-Deploy
-`node deploy`
+` npm start `
+
+` node deploy `
+
 
 ## Rules
+> 1. Mobile first
 
-- Mobile first
-- HTML4/CSS2/JS validation
 
-### Todo
+## Resources
+[Google Icons lookup](https://github.com/google/material-design-icons/blob/master/iconfont/codepoints)
 
-Version 0
-- [x] Test checkbox
-- [x] Split HTML, CSS and JS to separate files
-- [ ] I18N support
-- [ ] Korean alphabet
-- [ ] Add logo
-- [ ] Add favicon
-- [x] Hot reloading
 
-Version 1
-- [ ] Add text
-- [ ] Add contact to footer
+## Versioning
+> Add tasks as needed.
+>
+> Given a version number MAJOR.MINOR.PATCH, increment the:
+>
+> MAJOR version when you make incompatible API changes,
+> MINOR version when you add functionality in a backwards-compatible manner, and
+> PATCH version when you make backwards-compatible bug fixes.
+>
+> x.0.0 MAJOR
+>
+> x.0.0 MINOR
+>
+> x.0.0 PATCH
 
-Version 2
-- [ ] Add facebook to footer
 
-#### Resources
+## TODO
 
-###### Google Icons lookup
+- [x] `0.0.0` Test checkbox
+- [x] `0.0.1` Split HTML, CSS and JS to separate files
+- [x] `0.0.2` Versioning
+- [ ] `0.0.3` Environments
 
-https://github.com/google/material-design-icons/blob/master/iconfont/codepoints
+
+- [ ] `0.1.0` TypeScript
+
+
+- [ ] `0.2.0` React
+- [ ] `0.2.1` Webpack
+
+
+- [ ] `0.3.0` Webpack dev server
+- [ ] `0.3.1` Hot reloading
+
+
+- [ ] `0.4.0` Redux
+- [ ] `0.4.1` Redux dev tools
+
+
+- [ ] `0.5.0` Router
+
+
+- [ ] `0.6.0` Markdown
+
+
+- [ ] `0.7.0` I18N support
+- [ ] `0.7.1` Korean alphabet
+
+
+- [ ] `1.0.0` Add logo
+- [ ] `1.0.1` Add favicon
+- [ ] `1.0.2` Add text
+- [ ] `1.0.3` Add contact to footer
+- [ ] `1.0.4` Add facebook to footer
