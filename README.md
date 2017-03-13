@@ -40,7 +40,7 @@
 - [x] `0.0.3` Environments
 
 
-- [ ] `0.1.0` TypeScript
+- [x] `0.1.0` TypeScript
 
 
 - [ ] `0.2.0` React
