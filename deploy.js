@@ -47,16 +47,17 @@ function confirmProduction() {
 }
 
 function deployStage() {
-  const dest = 'thehost.se@ssh.thehost.se:/www/kd'
-  rsync.destination(dest).execute(function (error, code, cmd) {
-    if (error) {
-      log(error, chalk.red)
-      log(`Rsync exited with code: ${code}.`)
-      log(`The command was: ${cmd}.`)
-    } else {
-      log('Successfully deployed to stage!', chalk.green)
-    }
-  })
+  // const dest = 'thehost.se@ssh.thehost.se:/www/kd'
+  // rsync.destination(dest).execute(function (error, code, cmd) {
+  //   if (error) {
+  //     log(error, chalk.red)
+  //     log(`Rsync exited with code: ${code}.`)
+  //     log(`The command was: ${cmd}.`)
+  //   } else {
+  //     log('Successfully deployed to stage!', chalk.green)
+  //   }
+  // })
+  log('TODO: Stage deployment (need to build etc)')
 }
 
 function deployProduction() {
