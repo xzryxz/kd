@@ -13,30 +13,46 @@ export interface MenuState {
 
 export default class Menu extends React.Component<MenuProps, MenuState> {
 
-    constructor(props: MenuProps) {
-      super(props)
-      this.state = {
-        isOpen: true,
-      }
+  constructor(props: MenuProps) {
+    super(props)
+    this.state = {
+      isOpen: false,
     }
+  }
 
-    renderMenu() {
-      return (
-        <div>
-          <a className="active" href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-        </div>
-      );
-    }
+  toggleMenu = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
 
-    render() {
-        // <i onclick="toggleMenu('CLOSE');" id="menu-close" className="material-icons" style="display: none;">&#xE5CD;</i>
-        // <i onclick="toggleMenu('OPEN');" id="menu-open" className="material-icons">&#xE5D2;</i>
-        return (
-          <div id="menu" style={{ display: 'none', }}>
-            { this.state.isOpen && this.renderMenu() }
-          </div>
-        );
-    }
+  renderMenu() {
+    return (
+      <div id="menu">
+        <a className="active" href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    );
+  }
+
+  renderToggle() {
+    return (
+      <div>
+        { this.state.isOpen && <i onClick={this.toggleMenu} id="menu-close" className="material-icons">&#xE5CD;</i> }
+        { !this.state.isOpen && <i onClick={this.toggleMenu} id="menu-open" className="material-icons">&#xE5D2;</i> }
+      </div>
+    );
+  }
+
+  render() {
+    const largeViewport = true; // TODO: find out with redux browser props
+    const showMenu = this.state.isOpen || largeViewport;
+    return (
+      <div>
+        { !largeViewport && this.renderToggle() }
+        { showMenu && this.renderMenu() }
+      </div>
+    );
+  }
 }

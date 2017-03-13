@@ -43,8 +43,8 @@
 - [x] `0.1.0` TypeScript
 
 
-- [ ] `0.2.0` React
-- [ ] `0.2.1` Webpack
+- [x] `0.2.0` React
+- [x] `0.2.1` Webpack
 
 
 - [ ] `0.3.0` Webpack dev server
