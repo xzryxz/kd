@@ -1,5 +1,11 @@
 # Dev Guide
 
+Installation
+`yarn`
+
+Start dev server
+`npm start`
+
 ## Rules
 
 - Mobile first
@@ -14,7 +20,7 @@ Version 0
 - [ ] Korean alphabet
 - [ ] Add logo
 - [ ] Add favicon
-- [ ] Hot reloading with webpack-dev-server
+- [ ] Hot reloading
 
 Version 1
 - [ ] Add text

@@ -1,6 +1,10 @@
 {
+  "name": "koreandemocrats",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node_modules/.bin/browser-sync start --server src --files src"
+  },
   "dependencies": {
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.1"
+    "browser-sync": "^2.18.8"
   }
 }
