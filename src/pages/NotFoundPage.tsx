@@ -6,7 +6,7 @@ class NotFoundPage extends React.Component<undefined, undefined> {
     return (
       <div>
         <h1> Not found </h1>
-        <p> Could not find whatever it was that you were looking for. </p>
+        <p> The requested page could not be found. </p>
       </div>
     );
   }

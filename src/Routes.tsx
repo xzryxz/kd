@@ -4,6 +4,8 @@ import { syncHistoryWithStore } from 'react-router-redux';
 import store from './lib/store';
 import App from './containers/App';
 import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 
@@ -16,7 +18,9 @@ export default class Routes extends React.Component<undefined, undefined> {
         <Redirect from="/" to="/home" />
         <Route path="/" component={App}>
           <Route path="/home" component={HomePage} />
-          <Route path="/notfound" component={NotFoundPage} />
+          <Route path="/about" component={AboutPage} />
+          <Route path="/contact" component={ContactPage} />
+          <Route path="*" component={NotFoundPage} />
         </Route>
       </Router>
     );

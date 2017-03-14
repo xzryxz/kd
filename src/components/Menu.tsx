@@ -1,8 +1,10 @@
-import * as React from "react";
+import * as React from 'react';
+import * as classnames from 'classnames';
 
 
 export interface MenuProps {
   browser: any;
+  routing: any;
 }
 
 export interface MenuState {
@@ -18,18 +20,27 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
     }
   }
 
-  toggleMenu = () => {
+  componentWillUpdate(nextProps: any) {
+    const nextRoute = nextProps.routing.locationBeforeTransitions.pathname;
+    const currentRoute = this.props.routing.locationBeforeTransitions.pathname;
+    if (nextRoute !== currentRoute) {
+      this.toggleMenu(false);
+    }
+  }
+
+  toggleMenu = (to?: boolean) => {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: to === undefined ? !this.state.isOpen : to,
     });
   }
 
   renderMenu() {
+    const { pathname } = this.props.routing.locationBeforeTransitions;
     return (
       <div id="menu">
-        <a className="active" href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a className={classnames({ active: pathname === '/home' })} href="#/home">Home</a>
+        <a className={classnames({ active: pathname === '/about' })}  href="#/about">About</a>
+        <a className={classnames({ active: pathname === '/contact' })}  href="#/contact">Contact</a>
       </div>
     );
   }
@@ -37,8 +48,8 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
   renderToggle() {
     return (
       <div>
-        { this.state.isOpen && <i onClick={this.toggleMenu} id="menu-close" className="material-icons">&#xE5CD;</i> }
-        { !this.state.isOpen && <i onClick={this.toggleMenu} id="menu-open" className="material-icons">&#xE5D2;</i> }
+        { this.state.isOpen && <i onClick={() => this.toggleMenu()} id="menu-close" className="material-icons">&#xE5CD;</i> }
+        { !this.state.isOpen && <i onClick={() => this.toggleMenu()} id="menu-open" className="material-icons">&#xE5D2;</i> }
       </div>
     );
   }

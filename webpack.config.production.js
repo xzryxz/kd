@@ -5,11 +5,11 @@ var config = require('./webpack.config.js')
 
 config.plugins = [
   new HtmlWebpackPlugin({
-      template: 'src/index.html.tpl',
-      inject: 'body',
+    template: 'src/index.html.tpl',
+    inject: 'body',
   }),
   new InterpolateHtmlPlugin({
-      PUBLIC_URL: '',
+    PUBLIC_URL: '',
   }),
 ]
 
