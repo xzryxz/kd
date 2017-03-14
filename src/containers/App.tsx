@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
+import { push } from 'react-router-redux'
 import Language from './../components/Language'
 import Menu from './../components/Menu'
 
@@ -31,4 +32,8 @@ const mapStateToProps = (state: any) => ({
   routing: state.routing,
 })
 
-export default connect(mapStateToProps)(App)
+const mapDispatchToProps = (dispatch: any) => ({
+  toggleLanguage: (nextUrl) => dispatch(push(nextUrl)),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)
