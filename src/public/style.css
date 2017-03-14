@@ -75,19 +75,12 @@ p.intro {
 }
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 993px) {
 
   body {
     padding: 2rem;
   }
 
-
-  #menu-open, #menu-close {
-    display: none !important;
-  }
-  #menu {
-    display: block !important;
-  }
   #menu a {
     float: none;
   }
