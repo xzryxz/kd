@@ -23,11 +23,6 @@ export default class Document extends React.Component<DocumentProps, undefined> 
 
 
 
-
-
-
-
-
 // If you either set escapeHtml or skipHtml to true, this component does not use dangerouslySetInnerHTML at all - this is a Good Thing™.
 //
 // Options

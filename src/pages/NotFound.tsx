@@ -1,8 +1,9 @@
 import * as React from 'react'
 
+
 class NotFoundPage extends React.Component<undefined, undefined> {
 
-  render() {
+  render () {
     return (
       <div>
         <h1> Not found </h1>

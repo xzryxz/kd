@@ -2,25 +2,25 @@ import * as React from 'react'
 import * as classnames from 'classnames'
 
 
-export interface MenuProps {
+interface MenuProps {
   browser: any
   routing: any
 }
 
-export interface MenuState {
+interface MenuState {
   isOpen: boolean
 }
 
 export default class Menu extends React.Component<MenuProps, MenuState> {
 
-  constructor(props: MenuProps) {
+  constructor (props: MenuProps) {
     super(props)
     this.state = {
       isOpen: false,
     }
   }
 
-  componentWillUpdate(nextProps: any) {
+  componentWillUpdate (nextProps: any) {
     const nextRoute = nextProps.routing.locationBeforeTransitions.pathname
     const currentRoute = this.props.routing.locationBeforeTransitions.pathname
     if (nextRoute !== currentRoute) {
@@ -34,18 +34,18 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
     })
   }
 
-  renderMenu() {
+  renderMenu () {
     const { pathname } = this.props.routing.locationBeforeTransitions
     return (
       <div id="menu">
-        <a className={classnames({ active: pathname === '/home' })} href="#/home">Home</a>
-        <a className={classnames({ active: pathname === '/about' })}  href="#/about">About</a>
-        <a className={classnames({ active: pathname === '/contact' })}  href="#/contact">Contact</a>
+        <a className={classnames({ active: pathname === '/home' })} href="#/en/home">Home</a>
+        <a className={classnames({ active: pathname === '/about' })}  href="#/en/about">About</a>
+        <a className={classnames({ active: pathname === '/contact' })}  href="#/en/contact">Contact</a>
       </div>
     )
   }
 
-  renderToggle() {
+  renderToggle () {
     return (
       <div>
         { this.state.isOpen && <i onClick={() => this.toggleMenu()} id="menu-close" className="material-icons">&#xE5CD;</i> }
@@ -54,7 +54,7 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
     )
   }
 
-  render() {
+  render () {
     const largeViewport = this.props.browser.greaterThan.medium
     const showMenu = this.state.isOpen || largeViewport
     return (

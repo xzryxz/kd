@@ -1,20 +1,22 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
+import Language from './../components/Language'
 import Menu from './../components/Menu'
 
 
-export interface AppProps {
+interface AppProps {
   browser: any
   routing: any
   children: any
 }
 
 class App extends React.Component<AppProps, undefined> {
-  render() {
+  render () {
     const { browser, routing } = this.props
     return (
       <div>
         <div id="page">
+          <Language routing={routing} />
           <Menu browser={browser} routing={routing} />
           { this.props.children }
         </div>

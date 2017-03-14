@@ -14,7 +14,7 @@ const middleware = [
 
 const enhancer = composeWithDevTools(compose(responsiveStoreEnhancer, applyMiddleware(...middleware)))
 
-function configureStore(initialState) {
+function configureStore (initialState) {
   const store = createStore(rootReducer, initialState, enhancer)
   if (module.hot) {
     module.hot.accept('../reducers', () => store.replaceReducer(rootReducer))

@@ -1,11 +1,22 @@
 import * as React from 'react'
+import { connect } from 'react-redux'
 import Document from '../components/Document'
 
 
-export default class HomePage extends React.Component<undefined, undefined> {
+interface HomePageProps {
+  routing: any
+}
+
+class HomePage extends React.Component<HomePageProps, undefined> {
 
   render () {
-    return <Document fileName={'Home'} langKey="en" />
+    return <Document fileName="Home" langKey={this.props.routing.locationBeforeTransitions.pathname.split('/')[1]} />
   }
 
 }
+
+const mapStateToProps = (state: any) => ({
+  routing: state.routing,
+})
+
+export default connect(mapStateToProps)(HomePage)

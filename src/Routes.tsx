@@ -12,17 +12,22 @@ import NotFound from './pages/NotFound'
 const history = syncHistoryWithStore(hashHistory, store)
 
 export default class Routes extends React.Component<undefined, undefined> {
-  render() {
+
+  render () {
     return (
       <Router history={history}>
-        <Redirect from="/" to="/home" />
+        <Redirect from="/" to="/en/home" />
         <Route path="/" component={App}>
-          <Route path="/home" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/en/home" component={Home} />
+          <Route path="/en/about" component={About} />
+          <Route path="/en/contact" component={Contact} />
+          <Route path="/ko/home" component={Home} />
+          <Route path="/ko/about" component={About} />
+          <Route path="/ko/contact" component={Contact} />
           <Route path="*" component={NotFound} />
         </Route>
       </Router>
     )
   }
+
 }
