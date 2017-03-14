@@ -20,10 +20,9 @@ module.exports = {
 
   resolve: {
     extensions: [
-      '*',
-      '.js',
-      '.json',
       '.md',
+      '.txt',
+      '.js',
       '.ts',
       '.tsx',
       '.web.js',
@@ -33,8 +32,10 @@ module.exports = {
 
   module: {
     rules: [
-      { test: /\.tsx?$/, loader: 'awesome-typescript-loader', },
+      { test: /\.tsx$/, loader: 'awesome-typescript-loader', },
       { test: /\.js?$/, loader: 'source-map-loader', enforce: 'pre', },
+      { test: /\.md$/, loader: 'raw-loader', },
+      { test: /\.txt$/, loader: 'raw-loader', },
     ],
   },
 

@@ -14,6 +14,9 @@ const history = syncHistoryWithStore(hashHistory, store)
 
 
 
+// import input from './test.md'
+// import txt from './file.txt'
+
 const input = `# test \n\n Lorem ipsum dolor sit amet.`
 
 const test = () => <ReactMarkdown source={input} />
