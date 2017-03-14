@@ -2,14 +2,12 @@ import * as React from "react";
 
 
 export interface MenuProps {
-
+  browser: any;
 }
-
 
 export interface MenuState {
   isOpen: boolean;
 }
-
 
 export default class Menu extends React.Component<MenuProps, MenuState> {
 
@@ -46,7 +44,7 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
   }
 
   render() {
-    const largeViewport = true; // TODO: find out with redux browser props
+    const largeViewport = this.props.browser.greaterThan.medium;
     const showMenu = this.state.isOpen || largeViewport;
     return (
       <div>

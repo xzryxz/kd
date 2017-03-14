@@ -2,11 +2,11 @@
 
 ## CLI commands
 
-` yarn install `
+`yarn install`
 
-` npm start `
+`yarn start`
 
-` node deploy `
+`yarn deploy`
 
 
 ## Rules
@@ -47,15 +47,15 @@
 - [x] `0.2.1` Webpack
 
 
-- [ ] `0.3.0` Webpack dev server
-- [ ] `0.3.1` Hot reloading
+- [x] `0.3.0` Webpack dev server
+- [x] `0.3.1` Hot reloading
 
 
-- [ ] `0.4.0` Redux
-- [ ] `0.4.1` Redux dev tools
+- [x] `0.4.0` Redux
+- [x] `0.4.1` Redux dev tools
 
 
-- [ ] `0.5.0` Router
+- [x] `0.5.0` Router
 
 
 - [ ] `0.6.0` Markdown
