@@ -10,7 +10,7 @@
     <title>Korean Democrats</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="%PUBLIC_URL%/css/style.css" rel="stylesheet">
+    <link href="%PUBLIC_URL%/style.css" rel="stylesheet">
   </head>
   <body>
     <div id="container">
