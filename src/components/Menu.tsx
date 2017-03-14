@@ -48,8 +48,8 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
   renderToggle() {
     return (
       <div>
-        { this.state.isOpen && <i onClick={() => this.toggleMenu()} id="menu-close" className="material-icons">&#xE5CD</i> }
-        { !this.state.isOpen && <i onClick={() => this.toggleMenu()} id="menu-open" className="material-icons">&#xE5D2</i> }
+        { this.state.isOpen && <i onClick={() => this.toggleMenu()} id="menu-close" className="material-icons">&#xE5CD;</i> }
+        { !this.state.isOpen && <i onClick={() => this.toggleMenu()} id="menu-open" className="material-icons">&#xE5D2;</i> }
       </div>
     )
   }

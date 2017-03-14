@@ -2,9 +2,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin')
 
 
-const marked = require('marked')
-const renderer = new marked.Renderer()
-
 module.exports = {
   entry: './src/index',
   output: {
@@ -20,8 +17,6 @@ module.exports = {
 
   resolve: {
     extensions: [
-      '.md',
-      '.txt',
       '.js',
       '.ts',
       '.tsx',
@@ -34,8 +29,7 @@ module.exports = {
     rules: [
       { test: /\.tsx$/, loader: 'awesome-typescript-loader', },
       { test: /\.js?$/, loader: 'source-map-loader', enforce: 'pre', },
-      { test: /\.md$/, loader: 'raw-loader', },
-      { test: /\.txt$/, loader: 'raw-loader', },
+      { test: /\.md$/, use: 'raw-loader' },
     ],
   },
 

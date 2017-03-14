@@ -1,3 +1,33 @@
+import * as React from 'react'
+import * as ReactMarkdown from 'react-markdown'
+import documents from '../lib/documents'
+
+
+interface DocumentProps {
+  fileName: string
+  langKey: string
+}
+
+export default class Document extends React.Component<DocumentProps, undefined> {
+
+  render () {
+    const { fileName, langKey, } = this.props
+    return <ReactMarkdown source={documents[`${fileName}_${langKey}`]} />
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 // If you either set escapeHtml or skipHtml to true, this component does not use dangerouslySetInnerHTML at all - this is a Good Thing™.
 //
 // Options

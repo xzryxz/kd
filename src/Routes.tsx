@@ -1,5 +1,4 @@
 import * as React from 'react'
-import * as ReactMarkdown from 'react-markdown'
 import { Router, Route, Redirect, hashHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
 import store from './lib/store'
@@ -12,15 +11,6 @@ import NotFound from './pages/NotFound'
 
 const history = syncHistoryWithStore(hashHistory, store)
 
-
-
-// import input from './test.md'
-// import txt from './file.txt'
-
-const input = `# test \n\n Lorem ipsum dolor sit amet.`
-
-const test = () => <ReactMarkdown source={input} />
-
 export default class Routes extends React.Component<undefined, undefined> {
   render() {
     return (
@@ -30,7 +20,6 @@ export default class Routes extends React.Component<undefined, undefined> {
           <Route path="/home" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
-          <Route path="/test" component={test} />
           <Route path="*" component={NotFound} />
         </Route>
       </Router>

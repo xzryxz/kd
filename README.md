@@ -58,7 +58,7 @@
 - [x] `0.5.0` Router
 
 
-- [ ] `0.6.0` Markdown
+- [x] `0.6.0` Markdown
 
 
 - [ ] `0.7.0` I18N support
