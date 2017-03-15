@@ -61,8 +61,8 @@
 - [x] `0.6.0` Markdown
 
 
-- [ ] `0.7.0` I18N support
-- [ ] `0.7.1` Korean alphabet
+- [x] `0.7.0` I18N support
+- [x] `0.7.1` Korean alphabet
 
 
 - [ ] `1.0.0` Add logo
