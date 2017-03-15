@@ -36,11 +36,12 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
 
   renderMenu () {
     const { pathname } = this.props.routing.locationBeforeTransitions
+    const currentLangKey = pathname.split('/')[1]
     return (
       <div id="menu">
-        <a className={classnames({ active: pathname === '/home' })} href="#/en/home">Home</a>
-        <a className={classnames({ active: pathname === '/about' })}  href="#/en/about">About</a>
-        <a className={classnames({ active: pathname === '/contact' })}  href="#/en/contact">Contact</a>
+        <a className={classnames({ active: pathname === `/${currentLangKey}/home` })} href={`#/${currentLangKey}/home`}>{currentLangKey === 'en' ? 'Home' : '결결결'}</a>
+        <a className={classnames({ active: pathname === `/${currentLangKey}/about` })}  href={`#/${currentLangKey}/about`}>{currentLangKey === 'en' ? 'About' : '과과과'}</a>
+        <a className={classnames({ active: pathname === `/${currentLangKey}/contact` })}  href={`#/${currentLangKey}/contact`}>{currentLangKey === 'en' ? 'Contact' : '를를를'}</a>
       </div>
     )
   }

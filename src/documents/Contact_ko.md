@@ -1,5 +1,6 @@
 # Get in touch (ko)
 
 <p className="intro">
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  최소한의 노력으로 그 결과를 종합적으로 평가해야한다
+  최소한의 노력으로 그 결과를 종합적으로 평가해야한다
 </p>

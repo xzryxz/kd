@@ -9,6 +9,7 @@ interface AppProps {
   browser: any
   routing: any
   children: any
+  toggleLanguage: any
 }
 
 class App extends React.Component<AppProps, undefined> {
@@ -17,7 +18,7 @@ class App extends React.Component<AppProps, undefined> {
     return (
       <div>
         <div id="page">
-          <Language routing={routing} />
+          <Language routing={routing} toggleLanguage={this.props.toggleLanguage} />
           <Menu browser={browser} routing={routing} />
           { this.props.children }
         </div>
@@ -33,7 +34,7 @@ const mapStateToProps = (state: any) => ({
 })
 
 const mapDispatchToProps = (dispatch: any) => ({
-  toggleLanguage: (nextUrl) => dispatch(push(nextUrl)),
+  toggleLanguage: (nextUrl: string) => dispatch(push(nextUrl)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(App)

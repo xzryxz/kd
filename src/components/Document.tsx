@@ -1,6 +1,6 @@
 import * as React from 'react'
 import * as ReactMarkdown from 'react-markdown'
-import documents from '../lib/documents'
+import documents from '../documents'
 
 
 interface DocumentProps {

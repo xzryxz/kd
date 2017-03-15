@@ -10,15 +10,27 @@ interface LanguageProps {
 export default class Language extends React.Component<LanguageProps, undefined> {
 
   toggle = () => {
-    const currentLangKey = this.props.routing.locationBeforeTransitions.pathname.split('/')[1]
-    console.log(currentLangKey)
-    debugger
+    const currentUrl = this.props.routing.locationBeforeTransitions.pathname
+    const urlParts = currentUrl.split('/')
+    const currentLangKey = urlParts[1]
+    switch (currentLangKey) {
+      case 'en':
+        urlParts[1] = 'ko'
+        break
+      case 'ko':
+        urlParts[1] = 'en'
+        break
+      default:
+        throw new Error('Unexpected.')
+    }
+    const url = urlParts.join('/')
+    this.props.toggleLanguage(url)
   }
 
   render () {
     return (
       <div>
-        <button onClick={this.toggle}>toggle</button>
+        <div onClick={this.toggle}> toggle </div>
       </div>
     )
   }
