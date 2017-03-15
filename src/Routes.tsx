@@ -18,12 +18,9 @@ export default class Routes extends React.Component<undefined, undefined> {
       <Router history={history}>
         <Redirect from="/" to="/en/home" />
         <Route path="/" component={App}>
-          <Route path="/en/home" component={Home} />
-          <Route path="/en/about" component={About} />
-          <Route path="/en/contact" component={Contact} />
-          <Route path="/ko/home" component={Home} />
-          <Route path="/ko/about" component={About} />
-          <Route path="/ko/contact" component={Contact} />
+          <Route path="/:locale/home" component={Home} />
+          <Route path="/:locale/about" component={About} />
+          <Route path="/:locale/contact" component={Contact} />
           <Route path="*" component={NotFound} />
         </Route>
       </Router>

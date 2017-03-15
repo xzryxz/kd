@@ -1,10 +1,11 @@
 import * as React from 'react'
 import * as classnames from 'classnames'
+import Flag from './Flag'
 
 
 interface LanguageProps {
   routing: any
-  toggleLanguage: any
+  pushUrl: any
 }
 
 export default class Language extends React.Component<LanguageProps, undefined> {
@@ -12,8 +13,8 @@ export default class Language extends React.Component<LanguageProps, undefined> 
   toggle = () => {
     const currentUrl = this.props.routing.locationBeforeTransitions.pathname
     const urlParts = currentUrl.split('/')
-    const currentLangKey = urlParts[1]
-    switch (currentLangKey) {
+    const locale = urlParts[1]
+    switch (locale) {
       case 'en':
         urlParts[1] = 'ko'
         break
@@ -24,13 +25,16 @@ export default class Language extends React.Component<LanguageProps, undefined> 
         throw new Error('Unexpected.')
     }
     const url = urlParts.join('/')
-    this.props.toggleLanguage(url)
+    this.props.pushUrl(url)
   }
 
   render () {
+    const currentUrl = this.props.routing.locationBeforeTransitions.pathname
+    const urlParts = currentUrl.split('/')
+    const locale = urlParts[1]
     return (
-      <div>
-        <div onClick={this.toggle}> toggle </div>
+      <div id="language" onClick={this.toggle}>
+        <Flag locale={locale} />
       </div>
     )
   }

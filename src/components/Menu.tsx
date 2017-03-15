@@ -5,6 +5,7 @@ import * as classnames from 'classnames'
 interface MenuProps {
   browser: any
   routing: any
+  pushUrl: any
 }
 
 interface MenuState {
@@ -34,14 +35,29 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
     })
   }
 
+  goto = (page: string) => {
+    const { pathname } = this.props.routing.locationBeforeTransitions
+    const locale = pathname.split('/')[1]
+    this.props.pushUrl(`/${locale}/${page}`)
+  }
+
+  getCx = (page: string): any => {
+    const { pathname } = this.props.routing.locationBeforeTransitions
+    const locale = pathname.split('/')[1]
+    return classnames({
+      active: pathname === `/${locale}/${page}`,
+      link: true,
+    })
+  }
+
   renderMenu () {
     const { pathname } = this.props.routing.locationBeforeTransitions
-    const currentLangKey = pathname.split('/')[1]
+    const locale = pathname.split('/')[1]
     return (
       <div id="menu">
-        <a className={classnames({ active: pathname === `/${currentLangKey}/home` })} href={`#/${currentLangKey}/home`}>{currentLangKey === 'en' ? 'Home' : '결결결'}</a>
-        <a className={classnames({ active: pathname === `/${currentLangKey}/about` })}  href={`#/${currentLangKey}/about`}>{currentLangKey === 'en' ? 'About' : '과과과'}</a>
-        <a className={classnames({ active: pathname === `/${currentLangKey}/contact` })}  href={`#/${currentLangKey}/contact`}>{currentLangKey === 'en' ? 'Contact' : '를를를'}</a>
+        <span className={this.getCx('home')} onClick={() => this.goto('home')}>{locale === 'en' ? 'Home' : '결결결'}</span>
+        <span className={this.getCx('about')}  onClick={() => this.goto('about')}>{locale === 'en' ? 'About' : '과과과'}</span>
+        <span className={this.getCx('contact')}  onClick={() => this.goto('contact')}>{locale === 'en' ? 'Contact' : '를를를'}</span>
       </div>
     )
   }
@@ -65,4 +81,5 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
       </div>
     )
   }
+
 }
