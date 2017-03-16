@@ -35,14 +35,15 @@ a:hover {
   height: 3rem;
   width: 3rem;
   float: left;
-  margin: .5rem .5rem 0 0;
+  margin: .4rem .5rem 2rem 0;
 }
 .flag svg {
-  border: 2px solid #dddddd;
+  border: 2px solid #cccccc;
   opacity: .5;
 }
-.flag.active svg {
-  border-color: black;
+.flag.active svg,
+.flag:hover svg {
+  border-color: #0000ff;
   opacity: 1;
 }
 
@@ -68,7 +69,7 @@ a:hover {
 
 h1 {
   border-bottom: 1px solid #111111;
-  padding-top: 3rem;
+  padding-top: 2rem;
   clear: both;
 }
 
