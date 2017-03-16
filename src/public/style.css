@@ -30,15 +30,20 @@ a:hover {
 }
 
 
-#language {
-  border: 1px solid red;
+.flag {
   cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+  float: left;
+  margin: .5rem .5rem 0 0;
 }
-
-
-#flag {
-  max-height: 3rem;
-  max-width: 3rem;
+.flag svg {
+  border: 2px solid #dddddd;
+  opacity: .5;
+}
+.flag.active svg {
+  border-color: black;
+  opacity: 1;
 }
 
 
@@ -93,6 +98,10 @@ p.intro {
 
   body {
     padding: 2rem;
+  }
+
+  .flag {
+    float: right;
   }
 
   #menu .link {
