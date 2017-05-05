@@ -11,6 +11,7 @@
 
 ## Rules
 1. Mobile first
+2. Everything HTTPS
 
 ## Resources
 [Google Icons lookup](https://github.com/google/material-design-icons/blob/master/iconfont/codepoints)
@@ -27,46 +28,41 @@
 >
 > x.0.0 MAJOR
 >
-> x.0.0 MINOR
+> 0.x.0 MINOR
 >
-> x.0.0 PATCH
+> 0.0.x PATCH
 
 
-## TODO
+## KANBAN BOARD (with WIP limit)
 
-- [x] `0.0.0` Test checkbox
-- [x] `0.0.1` Split HTML, CSS and JS to separate files
-- [x] `0.0.2` Versioning
-- [x] `0.0.3` Environments
+### Backlog (∞)
+- [ ] Add contact to footer
+- [ ] Add facebook to footer
+- [ ] Add favicon
+- [ ] Add logo
+- [ ] Add text
 
+### Selected (2)
 
-- [x] `0.1.0` TypeScript
+### Define (1)
 
+### Doing (1)
 
-- [x] `0.2.0` React
-- [x] `0.2.1` Webpack
+### Tested (3)
 
-
-- [x] `0.3.0` Webpack dev server
-- [x] `0.3.1` Hot reloading
-
-
-- [x] `0.4.0` Redux
-- [x] `0.4.1` Redux dev tools
-
-
-- [x] `0.5.0` Router
-
-
-- [x] `0.6.0` Markdown
-
-
-- [x] `0.7.0` I18N support
+#### Version 0
 - [x] `0.7.1` Korean alphabet
-
-
-- [ ] `1.0.0` Add logo
-- [ ] `1.0.1` Add favicon
-- [ ] `1.0.2` Add text
-- [ ] `1.0.3` Add contact to footer
-- [ ] `1.0.4` Add facebook to footer
+- [x] `0.7.0` I18N support
+- [x] `0.6.0` Markdown
+- [x] `0.5.0` Router
+- [x] `0.4.1` Redux dev tools
+- [x] `0.4.0` Redux
+- [x] `0.3.1` Hot reloading
+- [x] `0.3.0` Webpack dev server
+- [x] `0.2.1` Webpack
+- [x] `0.2.0` React
+- [x] `0.1.0` TypeScript
+- [x] `0.0.3` Environments
+- [x] `0.0.2` Versioning
+- [x] `0.0.1` Split HTML, CSS and JS to separate files
+- [x] `0.0.0` Test checkbox
