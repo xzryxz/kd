@@ -86,9 +86,9 @@ It is most urgent to set up this principle for Democracy in the south Korea.
 
 A new type of the Far East Asian Pease and Economic cooperation Committee should be set up, whose primary members are China, Twain, Japan, north Korea and south Korea and the countries as observer-status are America and Russia for a permanent and actual establishment of Peace in the Korean peninsula and in Far East Asia and even in the world.
 
-We need cooperation but not subordination. Is the establishment for anti-missile system really for the security of the south Korea ? , or the base for control over Russia and China as a world police ? Is there any other country except the south Korea in the world which can not decide his own military defence . We want to have a friendship with America but the Korean self-determination should be first priority. The Korean-American relationship should be newly set up on the principle of equality which might be similar to the German and American relationship. We work for the international cooperation but truly under the firm principle of equality. The soverity of Korea should be carefully restored.
+We need cooperation but not subordination. Is the establishment for anti-missile system really for the security of the south Korea ? , or the base for control over Russia and China as a world police ? Is there any other country except the south Korea in the world which can not decide his own military defense . We want to have a friendship with America but the Korean self-determination should be first priority. The Korean-American relationship should be newly set up on the principle of equality which might be similar to the German and American relationship. We work for the international cooperation but truly under the firm principle of equality. The soverity of Korea should be carefully restored.
 
-It is not justice and equality that the south Korea has done the treaty with Japan about the Japanese war crimes against our people ( i.e. enslaved Korean females misused by Japanese soldiers during the 2nd world war).
+It is not justice and equality that the south Korea has done the treaty with Japan about the Japanese war crimes against our people (i.e. enslaved Korean females misused by Japanese soldiers during the 2nd world war).
 
 Without any notices to the south Korea, the military exercises in the Korean territory hade been carried out by the American-Japanese military. These are not cooperation but subordination and without any respect for soverity of the south Korea.
 
@@ -106,13 +106,13 @@ Without the north and the south Koreas have become democratic, there is no futur
 
 **A Committee of the Truth.**
 
-The Truth Committee is a highest organisation of this party. Which judges who Korean Democrats truly are and re- examine and study the modern Korean history under the objective and truth commitment of Justice. the Bishop Desmond Tutu and the President Nelson Mandela in the south Africa has done it under courage and consciousness.
+The Truth Committee is a highest organization of this party. Which judges who Korean Democrats truly are and re- examine and study the modern Korean history under the objective and truth commitment of Justice. the Bishop Desmond Tutu and the President Nelson Mandela in the south Africa has done it under courage and consciousness.
 
 All kinds of law and regulation should be re-examined on the modern situation and principle.
 
-No Korean should be afraid to be judged. Any who is lying and has closed mind to tell the truth shall be a bad person who will have a bad health. The person who can tell the truth, and admitted his mistakes or confess what he has done the crimes, he or she will be free from his inner pains psychologically and be healthy. We should give up all kinds of inhuman methods to treat the criminal persons and should rehabiterize those criminal for the normal and cleaned citizens or human being to start their new life in the long term.
+No Korean should be afraid to be judged. Any who is lying and has closed mind to tell the truth shall be a bad person who will have a bad health. The person who can tell the truth, and admitted his mistakes or confess what he has done the crimes, he or she will be free from his inner pains psychologically and be healthy. We should give up all kinds of inhuman methods to treat the criminal persons and should rehabitarize those criminal for the normal and cleaned citizens or human being to start their new life in the long term.
 
-Our society should not discriminate any condemned person and support such rehabilitation for the condemned person. Through these processes of the judgements under the the truth committee, the Korea shall march to the future for the honest society with firm solidarity.
+Our society should not discriminate any condemned person and support such rehabilitation for the condemned person. Through these processes of the judgements under the truth committee, the Korea shall march to the future for the honest society with firm solidarity.
 
 In particularly we should re-examine all political prisoners who might be false accused and heavily suffered and also the politicians who did big mistakes politically and still hide his secrete crimes which can be soon found out, since nearly all records of such political crimes and secrets have been well reserved in the secret records. Such political crimes shall never be hidden and should be severely punished if not confessed.
 
@@ -130,13 +130,12 @@ The Korean Democrats needs your support.
 
 **The Korean Democrats** is a political party of the people, by the people and for the people.
 
-You can support us in many ways: Be a member, Donate, and Work actively for our party “.
+You can support us in many ways: Be a member, Donate, and Work actively for our party.
 
 Your donation can be sent to the Korean Democrats´s account,
 
-1). In Sweden, **Bankgiro nr. 656-2037.**
-
-2), International account, **IBAN SE90 9500 0099 6018 0656 2037.**
+1. In Sweden, **Bankgiro nr. 656-2037.**
+2. International account, **IBAN SE90 9500 0099 6018 0656 2037.**
 
 Do not forget to write your name and your post address if you wish to stay in contact with the Korean Democrats.
 
