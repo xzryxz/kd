@@ -10,7 +10,7 @@ interface HomePageProps {
 class HomePage extends React.Component<HomePageProps, undefined> {
 
   render () {
-    return <Document fileName="Home" langKey={this.props.routing.locationBeforeTransitions.pathname.split('/')[1]} />
+    return <Document fileNameSlug="TheKoreanDemocrats" langKey={this.props.routing.locationBeforeTransitions.pathname.split('/')[1]} />
   }
 
 }

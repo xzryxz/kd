@@ -4,15 +4,16 @@ import documents from '../documents'
 
 
 interface DocumentProps {
-  fileName: string
+  fileNameSlug: string
   langKey: string
 }
 
 export default class Document extends React.Component<DocumentProps, undefined> {
 
   render () {
-    const { fileName, langKey, } = this.props
-    return <ReactMarkdown source={documents[`${fileName}_${langKey}`]} />
+    const { fileNameSlug, langKey, } = this.props
+    const realFileName = documents[`${fileNameSlug}_${langKey}`]
+    return <ReactMarkdown source={realFileName} />
   }
 
 }

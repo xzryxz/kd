@@ -55,9 +55,7 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
     const locale = pathname.split('/')[1]
     return (
       <div id="menu">
-        <span className={this.getCx('home')} onClick={() => this.goto('home')}>{locale === 'en' ? 'Home' : '결결결'}</span>
-        <span className={this.getCx('about')}  onClick={() => this.goto('about')}>{locale === 'en' ? 'About' : '과과과'}</span>
-        <span className={this.getCx('contact')}  onClick={() => this.goto('contact')}>{locale === 'en' ? 'Contact' : '를를를'}</span>
+        <span className={this.getCx('home')} onClick={() => this.goto('home')}>{locale === 'en' ? 'The Korean Democrats' : 'The Korean Democrats – 민수당'}</span>
       </div>
     )
   }
